@@ -41,28 +41,21 @@ ul {
   display: flex;
 }
 .l-main {
-  padding-bottom: 32px;
-  background-color: #009688;
 }
 .l-top {
   height: 100vh;
-  padding: 40vh 0;
-  text-align: center;
 }
 .l-profile {
   max-width: 99%;
   margin: 0 auto 2px;
-  background-color: #ffffff;
 }
 .l-skill {
   max-width: 99%;
   margin: 0 auto 2px;
-  background-color: #ffffff;
 }
 .l-work {
   max-width: 99%;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 .l-footer {
   height: 45px;
@@ -71,7 +64,7 @@ ul {
 /*Module
 *****************************************/
 /*headerブロック*/
-#header {
+[id="header"] {
   background-color: #00796b;
 }
 .header__title {
@@ -80,13 +73,12 @@ ul {
   font-size: 1.25rem;
   color: #ffffff;
 }
-/*navブロック*/
-.nav {
+.header__nav {
   top: 0;
   right: 40px;
   position: absolute;
 }
-.nav__botton {
+.header__nav-botton {
   position: absolute;
   width: 40px;
   height: 45px;
@@ -95,57 +87,57 @@ ul {
   text-align: center;
   cursor: pointer;
 }
-.nav__botton-line {
+.header__nav-botton-line {
   position: relative;
   width: 20px;
   height: 20px;
   margin: 0 auto;
 }
-.nav__botton-line-top {
+.header__nav-botton-line-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 3px solid #ffffff;
   transform-origin: 0px 0px;
   transition-duration: 300ms;
   transform: skewY(0deg);
 }
-.nav__botton-line-top.--active {
+.header__nav-botton-line-top.--active {
   transform: skewY(45deg);
 }
-.nav__botton-line-center {
+.header__nav-botton-line-center {
   position: absolute;
   top: 10px;
   left: 0;
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 3px solid #ffffff;
   transition-duration: 300ms;
   transition-property: width;
 }
-.nav__botton-line-center.--active {
+.header__nav-botton-line-center.--active {
   width: 0%;
 }
-.nav__botton-line-bottom {
+.header__nav-botton-line-bottom {
   position: absolute;
   top: 20px;
   left: 0;
   width: 100%;
-  border-top: 3px solid white;
+  border-top: 3px solid #ffffff;
   transform-origin: 0px 20px;
   transition-duration: 300ms;
   transform: skewY(0deg);
 }
-.nav__botton-line-bottom.--active {
+.header__nav-botton-line-bottom.--active {
   transform: skewY(-45deg);
 }
-.nav__botton-text {
+.header__nav-botton-text {
   margin-top: 6px;
-  color: white;
+  color: #ffffff;
   font-size: 9px;
   font-weight: bolder;
 }
-.nav__list {
+.header__nav-list {
   display: none;
   background-color: #ffc107;
   position: absolute;
@@ -155,19 +147,28 @@ ul {
   height: 90px;
   padding-left: 10px;
 }
-.nav__list-item {
+.header__nav-list-item {
   height: 30px;
   width: 80px;
 }
-.nav__list-item + .nav__list-item {
-  border-top: 2px solid white;
+.header__nav-list-item + .header__nav-list-item {
+  border-top: 2px solid #ffffff;
 }
-.nav__list-item-anchor {
-  color: white;
+.header__nav-list-item-anchor {
+  color: #ffffff;
   font-weight: bolder;
   line-height: 30px;
 }
+/*mainブロック*/
+[id="main"] {
+  padding-bottom: 32px;
+  background-color: #009688;
+}
 /*topブロック*/
+[id="top"] {
+  padding: 40vh 0;
+  text-align: center;
+}
 .top__title {
   font-size: 2rem;
   color: #ffffff;
@@ -177,7 +178,9 @@ ul {
   color: #b2dfdb;
 }
 /*profileブロック*/
-#profile {
+[id="profile"] {
+  padding: 1rem;
+  background-color: #ffffff;
 }
 .profile__title {
   text-align: center;
@@ -191,17 +194,23 @@ ul {
   border-radius: 50%;
 }
 /*skillブロック*/
-#skill {
+[id="skill"] {
+  padding: 1rem;
+  background-color: #ffffff;
 }
 .skill__title1 {
   text-align: center;
 }
 /*workブロック*/
+[id="work"] {
+  padding: 1rem;
+  background-color: #ffffff;
+}
 .work__title {
   text-align: center;
 }
 /*footerブロック*/
-.footer {
+[id="footer"] {
   background-color: #00796b;
   text-align: center;
 }
@@ -210,6 +219,3 @@ ul {
   font-size: 0.9rem;
   color: #ffffff;
 }
-
-/*Utillity
-*****************************************/

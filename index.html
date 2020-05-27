@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G.M's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/gm-portfolio.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>G.M's Portfolio</title>
-	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-	<link rel="stylesheet" href="./css/gm-portfolio.css">
-</head>
+  <body>
+    <header id="header" class="l-header">
+      <h1 class="header__title">
+        <a class="header__title-anchor" href="#top">G.M's Portfolio</a>
+      </h1>
+      <nav class="header__nav">
+        <div class="header__nav-botton">
+          <div class="header__nav-botton-line">
+            <div class="header__nav-botton-line-top"></div>
+            <div class="header__nav-botton-line-center"></div>
+            <div class="header__nav-botton-line-bottom"></div>
+          </div>
+          <p class="header__nav-botton-text">MENU</p>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item">
+            <a class="header__nav-list-item-anchor" href="#profile">Profile</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a class="header__nav-list-item-anchor" href="#skill">Skill</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a class="header__nav-list-item-anchor" href="#work">Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="l-main">
+      <section id="top" class="l-top">
+        <h2 class="top__title">ー G.M's Portfolio ー</h2>
+        <p class="top__text">ポートフォリオ</p>
+      </section>
+      <section id="profile" class="l-profile">
+        <h2 class="profile__title">Profile</h2>
+        <p class="profile__photo">
+          <img
+            class="profile__photo-img"
+            src="https://source.unsplash.com/random/100x100"
+            alt="プロフィール写真"
+          />
+        </p>
 
-<body>
-	<header id="header" class="l-header">
-		<h1 class="header__title"><a class="header__title-anchor" href="#top">G.M's Portfolio</a></h1>
-		<nav class="nav">
-			<div class="nav__botton">
-				<div class="nav__botton-line">
-					<div class="nav__botton-line-top"></div>
-					<div class="nav__botton-line-center"></div>
-					<div class="nav__botton-line-bottom"></div>
-				</div>
-				<p class="nav__botton-text">MENU</p>
-			</div>
-			<ul class="nav__list">
-				<li class="nav__list-item"><a class="nav__list-item-anchor" href="#profile">Profile</a></li>
-				<li class="nav__list-item"><a class="nav__list-item-anchor" href="#skill">Skill</a></li>
-				<li class="nav__list-item"><a class="nav__list-item-anchor" href="#work">Work</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="main" class="l-main">
-		<section id="top" class="l-top">
-			<h2 class="top__title">ー G.M's Portfolio ー</h2>
-			<p class="top__text">ポートフォリオ</p>
-		</section>
-		<section id="profile" class="l-profile">
-			<h2 class="profile__title">Profile</h2>
-			<p class="profile__photo"><img class="profile__photo-img" src="https://source.unsplash.com/random/100x100"
-					alt="プロフィール写真"></p>
-			<p class="profile__text">
-				1978年生まれ。
-				大学卒業後、独立系SIerに就職し、携帯電話端末のソフトウェア開発及び評価テストに従事。
-				現在は、就労移行支援事業所に通いながら、独学でHTML・CSS・JavaScript等を勉強中。
-			</p>
-		</section>
-		<section id="skill" class="l-skill">
-			<h2 class="skill__title1">Skill</h2>
-			<section>
-				<h3 class="skill__title2">マークアップ言語</h3>
-				<ul>
-					<li>HTML5 & CSS3
-						<p>以下の参考書で学習</p>
-						<ul>
-							<li>HTML＆CSSとWebデザイン入門講座。</li>
-							<li>HTML5＆CSS3標準デザイン講座。</li>
-							<li>Web制作者のためのCSS設計の教科書。</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h3>プログラミング言語</h3>
-				<ul>
-					<li>JavaScript
-						<p>以下の参考書で学習</p>
-						<ul>
-							<li>JavaScriptの絵本。</li>
-							<li>JavaScript本格入門　～モダンスタイルによる基礎から現場での応用まで。</li>
-						</ul>
-					</li>
-					<li>jQuery
-						<p>以下の参考書で学習</p>
-						<ul>
-							<li>Web制作の現場で使うjQueryデザイン入門。</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h3>資格</h3>
-				<ul>
-					<li>基本情報技術者</li>
-					<li>応用情報技術者</li>
-					<li>CCNA(失効済み)</li>
-				</ul>
-			</section>
-		</section>
-		<section id="work" class="l-work">
-			<h2 class="work__title">Work</h2>
-			<p class="work__text">準備中・・・</p>
-		</section>
-	</main>
-	<footer class="l-footer footer">
-		<p class="footer__text"><small>©2020 G.M</small></p>
-	</footer>
-	<script src="./script/jquery-3.4.1.min.js"></script>
-	<script src="./script/gm-portfolio.js"></script>
-</body>
-
+        <p class="profile__text">
+          1978年生まれ。
+          大学卒業後、独立系SIerに就職し、携帯電話端末のソフトウェア開発及び評価テストに従事。
+          現在は、就労移行支援事業所に通いながら、独学でHTML・CSS・JavaScript等を勉強中。
+        </p>
+      </section>
+      <section id="skill" class="l-skill">
+        <h2 class="skill__title1">Skill</h2>
+        <section>
+          <h3 class="skill__title2">マークアップ言語</h3>
+          <ul>
+            <li>
+              HTML5 & CSS3
+              <p>以下の参考書で学習</p>
+              <ul>
+                <li>HTML＆CSSとWebデザイン入門講座。</li>
+                <li>HTML5＆CSS3標準デザイン講座。</li>
+                <li>Web制作者のためのCSS設計の教科書。</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>プログラミング言語</h3>
+          <ul>
+            <li>
+              JavaScript
+              <p>以下の参考書で学習</p>
+              <ul>
+                <li>JavaScriptの絵本。</li>
+                <li>
+                  JavaScript本格入門　～モダンスタイルによる基礎から現場での応用まで。
+                </li>
+              </ul>
+            </li>
+            <li>
+              jQuery
+              <p>以下の参考書で学習</p>
+              <ul>
+                <li>Web制作の現場で使うjQueryデザイン入門。</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>資格</h3>
+          <ul>
+            <li>基本情報技術者</li>
+            <li>応用情報技術者</li>
+            <li>CCNA(失効済み)</li>
+          </ul>
+        </section>
+      </section>
+      <section id="work" class="l-work">
+        <h2 class="work__title">Work</h2>
+        <p class="work__text">準備中・・・</p>
+      </section>
+    </main>
+    <footer id="footer" class="l-footer">
+      <p class="footer__text"><small>©2020 G.M</small></p>
+    </footer>
+    <script src="./script/jquery-3.4.1.min.js"></script>
+    <script src="./script/gm-portfolio.js"></script>
+  </body>
 </html>
