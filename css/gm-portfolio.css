@@ -8,6 +8,7 @@ html {
 body {
   font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.7;
   color: #009688;
 }
 h1,
@@ -32,7 +33,7 @@ ul {
 /*Layout
 *****************************************/
 /* [class*="l-"] {
-  border: 1px solid red;
+  outline: 1px solid red;
 } */
 .l-header {
   position: fixed;
@@ -46,15 +47,15 @@ ul {
   height: 100vh;
 }
 .l-profile {
-  max-width: 99%;
-  margin: 0 auto 2px;
+  width: 98%;
+  margin: 0 auto 4px;
 }
 .l-skill {
-  max-width: 99%;
-  margin: 0 auto 2px;
+  width: 98%;
+  margin: 0 auto 4px;
 }
 .l-work {
-  max-width: 99%;
+  width: 98%;
   margin: 0 auto;
 }
 .l-footer {
@@ -67,10 +68,14 @@ ul {
 [id="header"] {
   background-color: #00796b;
 }
-.header__title {
-}
-.header__title-anchor {
+.header__logo {
+  margin-left: 5px;
+  line-height: 45px;
   font-size: 1.25rem;
+}
+.header__logo-anchor {
+  vertical-align: top;
+  font-size: inherit;
   color: #ffffff;
 }
 .header__nav {
@@ -138,14 +143,18 @@ ul {
   font-weight: bolder;
 }
 .header__nav-list {
-  display: none;
+  height: 0;
+  overflow: hidden;
   background-color: #ffc107;
   position: absolute;
   top: 45px;
   right: -40px;
   width: 100px;
-  height: 90px;
   padding-left: 10px;
+  transition-duration: 300ms;
+}
+.header__nav-list.--open {
+  height: 90px;
 }
 .header__nav-list-item {
   height: 30px;
@@ -155,9 +164,15 @@ ul {
   border-top: 2px solid #ffffff;
 }
 .header__nav-list-item-anchor {
+  display: inline-block;
   color: #ffffff;
   font-weight: bolder;
   line-height: 30px;
+  width: 100%;
+  height: 100%;
+}
+.header__nav-list-item-anchor:hover {
+  color: #947006;
 }
 /*mainブロック*/
 [id="main"] {
@@ -184,6 +199,8 @@ ul {
 }
 .profile__title {
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .profile__photo {
   text-align: center;
@@ -193,13 +210,71 @@ ul {
   height: 100px;
   border-radius: 50%;
 }
+.profile__text {
+  font-size: 1rem;
+}
 /*skillブロック*/
 [id="skill"] {
   padding: 1rem;
   background-color: #ffffff;
 }
-.skill__title1 {
+.skill__title {
   text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.skill__category {
+  margin-top: 1rem;
+}
+.skill__category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  border-left: 6px solid #00796b;
+  border-bottom: 1px solid #00796b;
+  margin-bottom: 0.5rem;
+}
+.skill__category-list {
+}
+.skill__category-list-item {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: #00796b;
+}
+.skill__category-list-item-text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.skill__book-list {
+}
+.skill__book-list-item {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #009688;
+}
+.skill__book-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../img/book_icon.svg);
+  background-size: contain;
+}
+.skill__qualification-list {
+}
+.skill__qualification-list-item {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.skill__qualification-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../img/qualification_icon.svg);
+  background-size: contain;
 }
 /*workブロック*/
 [id="work"] {
@@ -218,4 +293,73 @@ ul {
   line-height: 45px;
   font-size: 0.9rem;
   color: #ffffff;
+}
+
+@media screen and (min-width: 560px) {
+  /*Layout
+*****************************************/
+  .l-profile {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .l-skill {
+    width: 100%;
+    margin: 0 auto 4px;
+  }
+  .l-work {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*Module
+*****************************************/
+  /*headerブロック*/
+  .header__nav {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 7px;
+  }
+  .header__nav-botton {
+    display: none;
+  }
+  .header__nav-list {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    background-color: #ffc107;
+    position: static;
+    width: auto;
+    padding-left: 0;
+    transition: none;
+  }
+  .header__nav-list-item {
+    height: 30px;
+    width: 80px;
+    text-align: center;
+  }
+  .header__nav-list-item + .header__nav-list-item {
+    border: none;
+  }
+  .header__nav-list-item-anchor {
+    color: #ffffff;
+    font-weight: bolder;
+    line-height: 30px;
+  }
+  /*mainブロック*/
+  .main__wrap-outer {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .main__wrap-inner-1 {
+    width: 29%;
+    order: 2;
+  }
+  .main__wrap-inner-2 {
+    width: 70%;
+    order: 1;
+  }
 }
