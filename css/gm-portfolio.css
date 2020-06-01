@@ -48,7 +48,7 @@ ul {
 }
 .l-profile {
   width: 98%;
-  margin: 0 auto 4px;
+  margin: 8px auto 4px;
 }
 .l-skill {
   width: 98%;
@@ -181,8 +181,11 @@ ul {
 }
 /*topブロック*/
 [id="top"] {
-  padding: 40vh 0;
+  padding: 65vh 0 0 0;
   text-align: center;
+  background-image: url(../img/top_bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .top__title {
   font-size: 2rem;
@@ -190,7 +193,7 @@ ul {
 }
 .top__text {
   font-size: 1.5rem;
-  color: #b2dfdb;
+  color: #ffffff;
 }
 /*profileブロック*/
 [id="profile"] {
@@ -199,7 +202,7 @@ ul {
 }
 .profile__title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .profile__photo {
@@ -241,10 +244,6 @@ ul {
   font-weight: bolder;
   color: #00796b;
 }
-.skill__category-list-item-text {
-  font-size: 1rem;
-  font-weight: normal;
-}
 .skill__book-list {
 }
 .skill__book-list-item {
@@ -283,6 +282,8 @@ ul {
 }
 .work__title {
   text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 /*footerブロック*/
 [id="footer"] {
@@ -300,11 +301,11 @@ ul {
 *****************************************/
   .l-profile {
     width: 100%;
-    margin: 0 auto;
+    margin: 8px auto 0;
   }
   .l-skill {
     width: 100%;
-    margin: 0 auto 4px;
+    margin: 8px auto 4px;
   }
   .l-work {
     width: 100%;
@@ -318,7 +319,6 @@ ul {
     top: 0;
     right: 0;
     position: absolute;
-    padding-top: 7px;
   }
   .header__nav-botton {
     display: none;
@@ -334,9 +334,10 @@ ul {
     transition: none;
   }
   .header__nav-list-item {
-    height: 30px;
+    height: 45px;
     width: 80px;
     text-align: center;
+    line-height: 45px;
   }
   .header__nav-list-item + .header__nav-list-item {
     border: none;
