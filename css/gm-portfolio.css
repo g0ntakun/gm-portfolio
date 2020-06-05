@@ -164,19 +164,19 @@ ul {
   border-top: 2px solid #ffffff;
 }
 .header__nav-list-item-anchor {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
   font-weight: bolder;
   line-height: 30px;
-  width: 100%;
-  height: 100%;
 }
 .header__nav-list-item-anchor:hover {
   color: #947006;
 }
 /*mainブロック*/
 [id="main"] {
-  padding-bottom: 32px;
+  padding-bottom: 8px;
   background-color: #009688;
 }
 /*topブロック*/
@@ -225,6 +225,9 @@ ul {
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
+}
+.skill__text {
+  text-indent: 1rem;
 }
 .skill__category {
   margin-top: 1rem;
@@ -277,7 +280,7 @@ ul {
 }
 /*workブロック*/
 [id="work"] {
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   background-color: #ffffff;
 }
 .work__title {
@@ -285,6 +288,40 @@ ul {
   font-size: 1.8rem;
   font-weight: bold;
 }
+.work__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work__data {
+  width: 25%;
+  text-align: center;
+}
+.work__data-img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  vertical-align: middle;
+  box-shadow: 5px 5px 2px #00796b;
+}
+.work__data-info {
+  width: 70%;
+}
+.work__data-info-list {
+}
+.work__data-info-title {
+  float: left;
+  width: 6rem;
+}
+.work__data-info-description {
+  margin-left: 6rem;
+}
+.work__data-info-description::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 /*footerブロック*/
 [id="footer"] {
   background-color: #00796b;
@@ -345,7 +382,7 @@ ul {
   .header__nav-list-item-anchor {
     color: #ffffff;
     font-weight: bolder;
-    line-height: 30px;
+    line-height: 45px;
   }
   /*mainブロック*/
   .main__wrap-outer {
