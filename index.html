@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G.M's Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="./css/gm-portfolio.css" />
+    <link rel="stylesheet" href="./sass/app.css" />
   </head>
 
   <body>
-    <header id="header" class="l-header">
+    <header id="header" class="l-header header">
       <h1 class="header__logo">
         <a class="header__logo-anchor" href="#top">G.M's Portfolio</a>
       </h1>
@@ -35,14 +35,14 @@
         </ul>
       </nav>
     </header>
-    <main id="main" class="l-main">
-      <section id="top" class="l-top">
+    <main id="main" class="l-main main">
+      <section id="top" class="l-top top">
         <h2 class="top__title">ー G.M's Portfolio ー</h2>
         <p class="top__text">ポートフォリオ</p>
       </section>
-      <div class="main__wrap-outer">
-        <div class="main__wrap-inner-1">
-          <section id="profile" class="l-profile">
+      <div class="l-main__wrap-outer">
+        <div class="l-main__wrap-inner-1">
+          <section id="profile" class="l-profile profile">
             <h2 class="profile__title">Profile</h2>
             <p class="profile__photo">
               <img
@@ -60,8 +60,8 @@
             </p>
           </section>
         </div>
-        <div class="main__wrap-inner-2">
-          <section id="skill" class="l-skill">
+        <div class="l-main__wrap-inner-2">
+          <section id="skill" class="l-skill skill">
             <h2 class="skill__title">Skill</h2>
             <p class="skill__text">
               前職ではIT系企業に務めており、応用情報技術者資格も取得している為、ITについての基礎知識はあります。
@@ -73,8 +73,8 @@
               <ul class="skill__category-list">
                 <li class="skill__category-list-item">
                   HTML5 & CSS3
-                  <ul class="skill__book-list">
-                    <li class="skill__book-list-item">
+                  <ul class="skill__category-list-item-book-list">
+                    <li class="skill__category-list-item-book-list-item">
                       HTML＆CSSとWebデザイン入門講座
                     </li>
                     <li class="skill__book-list-item">
@@ -127,28 +127,30 @@
               </ul>
             </section>
           </section>
-          <section id="work" class="l-work">
+          <section id="work" class="l-work work">
             <h2 class="work__title">Work</h2>
             <dl class="work__list">
-              <dt class="work__data">
+              <dt class="work__list-term">
                 <img
-                  class="work__data-img"
+                  class="work__list-term-img"
                   src="./img/work.jpg"
                   alt="ワーク"
                   width="280"
                   height="356"
                 />
               </dt>
-              <dd class="work__data-info">
+              <dd class="work__list-discription">
                 <dl class="work__data-info-list">
-                  <dt class="work__data-info-title">制作物</dt>
-                  <dd class="work__data-info-description">ポートフォリオ</dd>
-                  <dt class="work__data-info-title">制作期間</dt>
-                  <dd class="work__data-info-description">2週間</dd>
-                  <dt class="work__data-info-title">使用ツール</dt>
-                  <dd class="work__data-info-description">VSCode</dd>
-                  <dt class="work__data-info-title">スキル</dt>
-                  <dd class="work__data-info-description">
+                  <dt class="work__data-info-list-term">制作物</dt>
+                  <dd class="work__data-info-list-description">
+                    ポートフォリオ
+                  </dd>
+                  <dt class="work__data-info-list-term">制作期間</dt>
+                  <dd class="work__data-info-list-description">2週間</dd>
+                  <dt class="work__data-info-list-term">使用ツール</dt>
+                  <dd class="work__data-info-list-description">VSCode</dd>
+                  <dt class="work__data-info-list-term">スキル</dt>
+                  <dd class="work__data-info-list-description">
                     HTML5 / CSS3 / JavaScript / jQuery
                   </dd>
                 </dl>
@@ -158,7 +160,7 @@
         </div>
       </div>
     </main>
-    <footer id="footer" class="l-footer">
+    <footer id="footer" class="l-footer footer">
       <p class="footer__text"><small>©2020 G.M</small></p>
     </footer>
     <script src="./script/jquery-3.4.1.min.js"></script>

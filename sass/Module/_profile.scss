@@ -1,0 +1,18 @@
+.profile {
+  &__title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  &__photo {
+    text-align: center;
+    &-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,79 @@
+// [class*="l-"] {
+//   outline: 1px solid red;
+// }
+
+.l-header {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  background-color: $color2;
+}
+.l-main {
+  padding-bottom: 8px;
+  background-color: $color1;
+  .l-top {
+    height: 100vh;
+    padding: 65vh 0 0 0;
+    text-align: center;
+    background-image: url(../img/top_bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .l-main__wrap-outer {
+    @include mediaquery($breakpoint) {
+      display: flex;
+      justify-content: space-between;
+      width: 98%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .l-main__wrap-inner-1 {
+      @include mediaquery($breakpoint) {
+        width: 29%;
+        order: 2;
+      }
+      .l-profile {
+        width: 98%;
+        margin: 8px auto 4px;
+        padding: 1rem;
+        background-color: $color3;
+        @include mediaquery($breakpoint) {
+          width: 100%;
+          margin: 8px auto 0;
+        }
+      }
+    }
+    .l-main__wrap-inner-2 {
+      @include mediaquery($breakpoint) {
+        width: 70%;
+        order: 1;
+      }
+      .l-skill {
+        width: 98%;
+        margin: 0 auto 4px;
+        padding: 1rem;
+        background-color: $color3;
+        @include mediaquery($breakpoint) {
+          width: 100%;
+          margin: 8px auto 4px;
+        }
+      }
+      .l-work {
+        width: 98%;
+        margin: 0 auto;
+        padding: 1rem 1rem 1.5rem 1rem;
+        background-color: $color3;
+        @include mediaquery($breakpoint) {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+.l-footer {
+  height: 45px;
+  background-color: $color2;
+  text-align: center;
+}

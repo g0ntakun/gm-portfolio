@@ -1,0 +1,41 @@
+.work {
+  &__title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-term {
+      width: 25%;
+      text-align: center;
+      &-img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+        vertical-align: middle;
+        box-shadow: 5px 5px 2px $color2;
+      }
+    }
+    &-discription {
+      width: 70%;
+    }
+  }
+}
+
+.work__data-info-list {
+  &-term {
+    float: left;
+    width: 6rem;
+  }
+  &-description {
+    margin-left: 6rem;
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+}

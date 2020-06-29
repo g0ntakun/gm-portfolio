@@ -1,0 +1,27 @@
+html {
+  font-size: 100%;
+  body {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    line-height: 1.7;
+    color: $color1;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color2;
+    }
+    p {
+      font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+        "Yu Mincho", "MS PMincho", serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+    }
+  }
+}
