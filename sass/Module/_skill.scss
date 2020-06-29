@@ -26,35 +26,34 @@
   }
 }
 
+%skill__xxx-list-item {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: contain;
+  }
+}
+
 .skill__book-list {
   &-item {
-    margin-left: 1rem;
-    font-size: 1rem;
-    font-weight: normal;
+    @extend %skill__xxx-list-item;
     color: $color1;
     &::before {
-      content: "";
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
       background-image: url(../img/book_icon.svg);
-      background-size: contain;
     }
   }
 }
 
 .skill__qualification-list {
   &-item {
-    margin-left: 1rem;
-    font-size: 1rem;
-    font-weight: normal;
+    @extend %skill__xxx-list-item;
     &::before {
-      content: "";
-      display: inline-block;
-      width: 1rem;
-      height: 1rem;
       background-image: url(../img/qualification_icon.svg);
-      background-size: contain;
     }
   }
 }
